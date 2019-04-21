@@ -6,3 +6,6 @@
 *.pt
 *.json
 *.sqlite3
+
+# IDE Files
+*.iml

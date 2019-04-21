@@ -25,7 +25,7 @@ def make_predictions(args: Namespace, smiles: List[str] = None) -> List[Optional
 
     print('Loading training args')
     scaler, features_scaler = load_scalers(args.checkpoint_paths[0])
-    train_args = load_args(args.checkpoint_paths[0])
+    train_args = load_args(args.checkpoint_path)
 
     # Update args with training arguments
     for key, value in vars(train_args).items():
